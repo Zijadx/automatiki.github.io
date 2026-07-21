@@ -41,7 +41,6 @@
     overflow-x: hidden;
   }
 
-  /* noise overlay */
   body::before {
     content: '';
     position: fixed;
@@ -52,7 +51,6 @@
     opacity: 0.4;
   }
 
-  /* grid background */
   body::after {
     content: '';
     position: fixed;
@@ -67,7 +65,6 @@
 
   * { position: relative; z-index: 1; }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0;
@@ -90,18 +87,6 @@
     align-items: center;
     line-height: 1;
   }
-
-  .nav-logo-mark {
-    width: 22px;
-    height: 22px;
-    background: var(--accent);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-logo-mark svg { width: 12px; height: 12px; }
 
   .nav-links {
     display: flex;
@@ -139,7 +124,6 @@
     border-color: rgba(255,255,255,0.2);
   }
 
-  /* HERO */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -196,7 +180,7 @@
   .hero-sub {
     font-size: 20px;
     color: var(--text-2);
-    max-width: 520px;
+    max-width: 560px;
     line-height: 1.7;
     margin-bottom: 2.5rem;
   }
@@ -244,7 +228,6 @@
     background: rgba(255,255,255,0.03);
   }
 
-  /* hero glow */
   .hero-glow {
     position: absolute;
     top: 20%;
@@ -257,7 +240,6 @@
     z-index: 0;
   }
 
-  /* SECTION */
   section {
     padding: 6rem 2rem;
     max-width: 1100px;
@@ -285,11 +267,10 @@
   .section-sub {
     font-size: 18px;
     color: var(--text-2);
-    max-width: 540px;
+    max-width: 560px;
     line-height: 1.7;
   }
 
-  /* SERVICES */
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -364,7 +345,6 @@
     border-radius: 4px;
   }
 
-  /* PROOF */
   .proof-section {
     padding: 6rem 2rem;
     border-top: 1px solid var(--border);
@@ -412,7 +392,6 @@
     line-height: 1.4;
   }
 
-  /* TERMINAL */
   .terminal {
     background: var(--bg-1);
     border: 1px solid var(--border);
@@ -460,7 +439,6 @@
     50% { opacity: 0; }
   }
 
-  /* STACK */
   .stack-section {
     padding: 6rem 2rem;
     max-width: 1100px;
@@ -497,7 +475,6 @@
     background: var(--accent-dim);
   }
 
-  /* CTA */
   .cta-section {
     padding: 6rem 2rem;
     text-align: center;
@@ -539,7 +516,6 @@
 
   .cta-email a:hover { text-decoration: underline; }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--border);
     padding: 2rem;
@@ -548,13 +524,6 @@
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
-  }
-
-  .footer-logo {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--text-3);
-    letter-spacing: 0.08em;
   }
 
   .footer-links {
@@ -573,14 +542,12 @@
 
   .footer-links a:hover { color: var(--text-2); }
 
-  /* DIVIDER */
   .full-divider {
     border: none;
     border-top: 1px solid var(--border);
     margin: 0;
   }
 
-  /* ANIMATIONS */
   .fade-up {
     opacity: 0;
     transform: translateY(20px);
@@ -606,7 +573,6 @@
 <nav>
   <a href="#" class="nav-logo">
     <svg viewBox="0 0 200 44" width="520" height="114" xmlns="http://www.w3.org/2000/svg">
-      <!-- Orbital mark — centered at 22,22 r=18 -->
       <circle cx="22" cy="22" r="18" fill="none" stroke="#3b82f6" stroke-width="1.3" stroke-dasharray="95 28" stroke-dashoffset="4"/>
       <circle cx="22" cy="22" r="12" fill="none" stroke="#3b82f6" stroke-width="0.7" opacity="0.4"/>
       <circle cx="22" cy="22" r="5" fill="#3b82f6"/>
@@ -615,9 +581,7 @@
       <circle cx="38" cy="31" r="2" fill="#3b82f6" opacity="0.75"/>
       <circle cx="6" cy="31" r="1.5" fill="#3b82f6" opacity="0.4"/>
       <path d="M39,14 L42,11 L37,10" stroke="#3b82f6" stroke-width="1" stroke-linecap="round" fill="none"/>
-      <!-- Wordmark -->
       <text x="50" y="26" font-family="system-ui,sans-serif" font-size="17" font-weight="700" fill="#e8edf2" letter-spacing="-0.3">automatiki</text>
-      <!-- Tagline -->
       <text x="51" y="37" font-family="system-ui,sans-serif" font-size="5.5" font-weight="400" fill="#4a7fa8" letter-spacing="1.8">ENGINEERED FOR AUTONOMY</text>
     </svg>
   </a>
@@ -636,7 +600,7 @@
   <div class="hero-badge">Available for engagements</div>
   <h1>ServiceNow AI,<br><em>engineered to ship.</em></h1>
   <p class="hero-sub">
-    Senior-level ServiceNow automation and AI integration — built faster, documented better, and production-ready from day one.
+    8+ years shipping ServiceNow. Now building the AI layer on top — agents, RAG pipelines, and integrations that go to prod, not just a demo.
   </p>
   <div class="hero-actions">
     <a href="mailto:eli.hamad.snow@gmail.com" class="btn-primary">Start a project</a>
@@ -649,8 +613,8 @@
 <!-- SERVICES -->
 <section id="services">
   <p class="section-label">What I build</p>
-  <h2 class="section-title">Three things.<br>Done at a different level.</h2>
-  <p class="section-sub">Each service is backed by 7+ years of hands-on ServiceNow platform work and production AI deployments.</p>
+  <h2 class="section-title">Three things.<br>Done right.</h2>
+  <p class="section-sub">Backed by 8+ years of hands-on ServiceNow platform work and real, shipped AI integrations — not proofs of concept.</p>
 
   <div class="services-grid fade-up">
 
@@ -663,8 +627,8 @@
           <path d="M14 11v2M13 12h2"/>
         </svg>
       </div>
-      <h3>AI-assisted ServiceNow development</h3>
-      <p>Production-grade platform builds delivered faster than traditional dev cycles. Clean architecture, full documentation, and code that your team can actually maintain.</p>
+      <h3>ServiceNow development</h3>
+      <p>Faster builds, cleaner architecture, documentation your team can actually follow. No ramp-up time — senior from the first commit.</p>
       <div class="service-tags">
         <span class="tag">Flow Designer</span>
         <span class="tag">Business Rules</span>
@@ -682,14 +646,14 @@
           <path d="M6 9h2M10 9h2M8 12h2"/>
         </svg>
       </div>
-      <h3>Claude + ServiceNow integration</h3>
-      <p>RAG pipelines, intelligent chatbots, and incident deflection systems built on the Anthropic Claude API — connected directly to your ServiceNow instance.</p>
+      <h3>AI + ServiceNow integration</h3>
+      <p>RAG pipelines, agentic workflows, and incident-deflection tooling built on Claude and Azure OpenAI, wired directly into your instance.</p>
       <div class="service-tags">
         <span class="tag">RAG</span>
         <span class="tag">Now Assist</span>
-        <span class="tag">Virtual Agent</span>
         <span class="tag">MCP</span>
         <span class="tag">Agentic AI</span>
+        <span class="tag">Azure OpenAI</span>
       </div>
     </div>
 
@@ -701,7 +665,7 @@
         </svg>
       </div>
       <h3>SOC workflow automation</h3>
-      <p>Security operations automation built for how analysts actually work — AI-assisted triage, intelligent routing, and reduced manual load on your SOC team.</p>
+      <p>Built for how analysts actually work — auto-triage, smart routing, and less manual load on your team.</p>
       <div class="service-tags">
         <span class="tag">SecOps</span>
         <span class="tag">ITSM</span>
@@ -721,8 +685,8 @@
   <div class="proof-inner">
     <div class="fade-up">
       <p class="section-label">Background</p>
-      <h2 class="section-title">Built by someone who's done this at scale.</h2>
-      <p class="section-sub">7+ years of ServiceNow architecture across multi-tenant, domain-separated environments at a leading cybersecurity firm. CSA, CAD, and ITIL certified.</p>
+      <h2 class="section-title">Done this at scale before.</h2>
+      <p class="section-sub">8+ years of ServiceNow architecture, most recently in a multi-tenant, domain-separated SOC environment. CSA, CAD, CIS-ITSM, and ITIL certified — currently building out Azure AI Foundry expertise.</p>
       <br>
       <a href="https://github.com/Zijadx/sn-triage-copilot" target="_blank" class="btn-ghost" style="display:inline-block; margin-top:0.5rem;">SN Triage Copilot →</a>
     </div>
@@ -730,7 +694,7 @@
     <div class="fade-up">
       <div class="stats-grid">
         <div class="stat">
-          <div class="stat-num">7<span>+</span></div>
+          <div class="stat-num">8<span>+</span></div>
           <div class="stat-label">Years ServiceNow platform experience</div>
         </div>
         <div class="stat">
@@ -738,8 +702,8 @@
           <div class="stat-label">MCP tools built for ServiceNow + Claude</div>
         </div>
         <div class="stat">
-          <div class="stat-num">3<span>x</span></div>
-          <div class="stat-label">Certifications — CSA, CAD, ITIL v3</div>
+          <div class="stat-num">4<span>x</span></div>
+          <div class="stat-label">Certifications — CSA, CAD, CIS-ITSM, ITIL v3</div>
         </div>
         <div class="stat">
           <div class="stat-num">0<span>ms</span></div>
@@ -757,12 +721,12 @@
   <div class="stack-row fade-up">
     <span class="stack-pill accent">ServiceNow</span>
     <span class="stack-pill accent">Claude API</span>
-    <span class="stack-pill accent">Now Assist</span>
+    <span class="stack-pill accent">Azure OpenAI</span>
+    <span class="stack-pill">Now Assist</span>
     <span class="stack-pill">Node.js</span>
     <span class="stack-pill">MCP Protocol</span>
     <span class="stack-pill">Flow Designer</span>
-    <span class="stack-pill">Virtual Agent</span>
-    <span class="stack-pill">AI Control Tower</span>
+    <span class="stack-pill">Agentic AI</span>
     <span class="stack-pill">RAG</span>
     <span class="stack-pill">Docker</span>
     <span class="stack-pill">GitHub Actions</span>
@@ -826,7 +790,7 @@
   <div class="cta-inner fade-up">
     <p class="section-label" style="text-align:center;">Let's work together</p>
     <h2>Ready to ship something real?</h2>
-    <p>Whether you need a full AI integration, a faster ServiceNow build, or a smarter SOC workflow — let's talk about what you're trying to solve.</p>
+    <p>AI integration, a faster ServiceNow build, or a smarter SOC workflow — let's talk about what you're trying to solve.</p>
     <a href="mailto:eli.hamad.snow@gmail.com" class="btn-primary">Start the conversation</a>
     <span class="cta-email">or email directly at <a href="mailto:eli.hamad.snow@gmail.com">eli.hamad.snow@gmail.com</a></span>
   </div>
