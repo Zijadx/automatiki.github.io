@@ -777,42 +777,37 @@
 <hr class="full-divider">
 
 <!-- TERMINAL / WORK -->
-<section id="work">
+<section id="work" class="portfolio">
   <p class="section-label">Portfolio</p>
-  <h2 class="section-title">Real work, real output.</h2>
+  <h2>Real work, real output.</h2>
   <p class="section-sub">Production deployments and open-source proof points — not demos.</p>
 
-  <div style="margin-top: 2.5rem;" class="fade-up">
-    <div class="terminal">
-      <div class="terminal-bar">
-        <div class="terminal-dot" style="background:#ff5f57"></div>
-        <div class="terminal-dot" style="background:#febc2e"></div>
-        <div class="terminal-dot" style="background:#28c840"></div>
-        <span style="font-size:11px; color:#4a5568; margin-left:8px;">automatiki — projects</span>
-      </div>
-      <div class="terminal-body">
-        <span class="t-line t-comment"># Active projects</span>
-        <span class="t-line">&nbsp;</span>
-        <span class="t-line"><span class="t-op">→</span> <span class="t-key">sn-triage-copilot</span> <span class="t-dim">················</span> <span class="t-val">production</span></span>
-        <span class="t-line t-comment">  RAG pipeline + model failover + structured output + observability</span>
-        <span class="t-line t-comment">  github.com/Zijadx/sn-triage-copilot</span>
-        <span class="t-line">&nbsp;</span>
-        <span class="t-line"><span class="t-op">→</span> <span class="t-key">servicenow-mcp-server</span> <span class="t-dim">··········</span> <span class="t-val">production</span></span>
-        <span class="t-line t-comment">  22-tool MCP server · Claude ↔ ServiceNow agentic loop</span>
-        <span class="t-line t-comment">  github.com/Zijadx/servicenow-mcp-server</span>
-        <span class="t-line">&nbsp;</span>
-        <span class="t-line"><span class="t-op">→</span> <span class="t-key">auto-triage-business-rule</span> <span class="t-dim">······</span> <span class="t-val">deployed</span></span>
-        <span class="t-line t-comment">  Async AI triage on incident insert · auto-resolve at high confidence</span>
-        <span class="t-line t-comment">  sys_id: 370c72ec9318c710771dfd18dd03d697</span>
-        <span class="t-line">&nbsp;</span>
-        <span class="t-line"><span class="t-op">→</span> <span class="t-key">nexus-agents</span> <span class="t-dim">····················</span> <span class="t-val">deployed</span></span>
-        <span class="t-line t-comment">  Multi-agent chat UI · 5 role-tuned agents · Code / SOC / Architect</span>
-        <span class="t-line">&nbsp;</span>
-        <span class="t-line t-comment"># Stack: Node.js · Claude API · Docker · GitHub Actions · Railway</span>
-        <span class="t-line">&nbsp;</span>
-        <span class="t-line"><span class="t-op">$</span> <span class="t-cursor"></span></span>
-      </div>
-    </div>
+  <div class="terminal-block">
+    <p class="terminal-header">automatiki — projects</p>
+    <pre class="terminal-body">
+# Active projects
+
+→ sn-triage-copilot ················ production
+  RAG pipeline + model failover + structured output + observability
+  github.com/Zijadx/sn-triage-copilot
+
+→ servicenow-mcp-server ············ production
+  22-tool MCP server · Claude ↔ ServiceNow agentic loop
+  github.com/Zijadx/servicenow-mcp-server
+
+→ auto-triage-business-rule ········ deployed
+  Async AI triage on incident insert · auto-resolve at high confidence
+  sys_id: 370c72ec9318c710771dfd18dd03d697
+
+→ nexus-agents ······················ deployed
+  Multi-agent chat UI · 5 role-tuned agents · Code / SOC / Architect
+
+ → servicenow-azure-ai-foundry ······ PDI / in progress
+  ServiceNow ↔ Azure OpenAI incident summarization · REST Message + Script Include + UI Action
+  Built on dev364186.service-now.com
+
+# Stack: Node.js · Claude API · Docker · GitHub Actions · Railway
+    </pre>
   </div>
 </section>
 
